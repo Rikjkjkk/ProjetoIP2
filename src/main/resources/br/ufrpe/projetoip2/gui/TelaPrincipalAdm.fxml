@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.projetoip2.gui.TelaPrincipalAdmController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="800.0" styleClass="bg-colorido" stylesheets="@style/style.css">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="45.0" prefHeight="50.0" prefWidth="230.0" styleClass="label-texto" stylesheets="@style/style.css" text="Restaurante Review" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imagemEstrelas" fitHeight="32.0" fitWidth="170.0" layoutX="51.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/EstrelasPNGVazio.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8552631735801697" green="0.8334856033325195" blue="0.41971248388290405" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="161.0" prefHeight="70.0" prefWidth="640.0" styleClass="label-textoMenor" stylesheets="@style/style.css" text="Pesquise o restaurante para edição" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="161.0" layoutY="65.0" prefHeight="70.0" prefWidth="640.0" styleClass="label-textoMenor" stylesheets="@style/style.css" text="Pesquise um usuário para edição" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="168.0" layoutY="130.0" prefHeight="70.0" prefWidth="640.0" styleClass="label-textoMenor" stylesheets="@style/style.css" text="Adicionar Restaurantes, Cadastrar Usuários e Editar os mesmos" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnLogoff" layoutX="696.0" layoutY="554.0" mnemonicParsing="false" onAction="#Logoff" prefHeight="30.0" prefWidth="90.0" styleClass="btn-default" stylesheets="@style/style.css" text="Logoff">
+         <font>
+            <Font name="Lucida Sans Unicode" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPesquisaRestaurante" layoutX="174.0" layoutY="250.0" mnemonicParsing="false" onAction="#PesquisaRestaurante" prefHeight="50.0" prefWidth="190.0" styleClass="btn-default" stylesheets="@style/style.css" text="Pesquisa de Restaurante">
+         <font>
+            <Font name="Lucida Sans Unicode" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPesquisaUsuario" layoutX="179.0" layoutY="350.0" mnemonicParsing="false" onAction="#PesquisaUsuario" prefHeight="50.0" prefWidth="180.0" styleClass="btn-default" stylesheets="@style/style.css" text="Pesquisa de Usuário">
+         <font>
+            <Font name="Lucida Sans Unicode" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdicionarRestaurante" layoutX="526.0" layoutY="250.0" mnemonicParsing="false" onAction="#TrocarTelaAdcionarRestaurante" prefHeight="50.0" prefWidth="170.0" styleClass="btn-default" stylesheets="@style/style.css" text="Adicionar Restaurante">
+         <font>
+            <Font name="Lucida Sans Unicode" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCadastrarUsuario" layoutX="526.0" layoutY="350.0" mnemonicParsing="false" onAction="#TrocarTelaCadastroADM" prefHeight="50.0" prefWidth="170.0" styleClass="btn-default" stylesheets="@style/style.css" text="Cadastrastrar Usuário">
+         <font>
+            <Font name="Lucida Sans Unicode" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPesuisaAvaliacoes" layoutX="179.0" layoutY="450.0" mnemonicParsing="false" onAction="#PesquisaAvaliacao" prefHeight="50.0" prefWidth="180.0" styleClass="btn-default" stylesheets="@style/style.css" text="Pesquisa de Avaliações">
+         <font>
+            <Font name="Lucida Sans Unicode" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPerfil" layoutX="526.0" layoutY="450.0" mnemonicParsing="false" onAction="#TrocarTelaPerfil" prefHeight="50.0" prefWidth="170.0" styleClass="btn-default" stylesheets="@style/style.css" text="Meu perfil">
+         <font>
+            <Font name="Lucida Sans Unicode" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
