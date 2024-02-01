@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.TelaPerfilController">
+   <children>
+      <Button fx:id="btnVoltar" layoutX="75.0" layoutY="350.0" mnemonicParsing="false" onAction="#TrocarTelaPrincipal" prefHeight="30.0" prefWidth="90.0" text="Voltar">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnAvaliacoes" layoutX="275.0" layoutY="350.0" mnemonicParsing="false" text="Avaliações">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblNome" layoutX="146.0" layoutY="132.0" text="Fulano da Silva">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLogin" layoutX="145.0" layoutY="182.0" text="fulano.silva">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTipo" layoutX="125.0" layoutY="232.0" text="Padrão / Crítico">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="132.0" text="Nome:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="182.0" text="Login:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="232.0" text="Tipo:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="23.0" text="Meu perfil">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
