@@ -4,7 +4,9 @@ import br.ufrpe.projetoip2.beans.Avaliacao;
 import br.ufrpe.projetoip2.beans.Restaurante;
 import br.ufrpe.projetoip2.beans.TipoComida;
 import br.ufrpe.projetoip2.dados.IRepositorioGenerico;
+import br.ufrpe.projetoip2.dados.IRepositorioRestaurante;
 import br.ufrpe.projetoip2.dados.RepositorioGenerico;
+import br.ufrpe.projetoip2.dados.RepositorioRestaurante;
 import br.ufrpe.projetoip2.exception.ObjetoInvalidoException;
 import br.ufrpe.projetoip2.exception.ObjetoJaExisteException;
 
@@ -13,12 +15,12 @@ import java.util.Comparator;
 import java.util.List;
 
 public class ControladorRestaurante {
-    private final IRepositorioGenerico<Restaurante> repositorioRestaurantes;
+    private final IRepositorioRestaurante repositorioRestaurantes;
     private static ControladorRestaurante instancia;
 
     // Controlador
     public ControladorRestaurante() {
-        this.repositorioRestaurantes = new RepositorioGenerico<>();
+        this.repositorioRestaurantes = new RepositorioRestaurante();
     }
 
     // Pega a instância do controlador

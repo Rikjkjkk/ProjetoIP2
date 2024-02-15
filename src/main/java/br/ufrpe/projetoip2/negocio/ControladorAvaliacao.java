@@ -4,7 +4,9 @@ import br.ufrpe.projetoip2.beans.Avaliacao;
 import br.ufrpe.projetoip2.beans.Restaurante;
 import br.ufrpe.projetoip2.beans.TipoDeConta;
 import br.ufrpe.projetoip2.beans.Usuario;
+import br.ufrpe.projetoip2.dados.IRepositorioAvaliacao;
 import br.ufrpe.projetoip2.dados.IRepositorioGenerico;
+import br.ufrpe.projetoip2.dados.RepositorioAvaliacao;
 import br.ufrpe.projetoip2.dados.RepositorioGenerico;
 import br.ufrpe.projetoip2.exception.ObjetoInvalidoException;
 import br.ufrpe.projetoip2.exception.ObjetoJaExisteException;
@@ -13,13 +15,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ControladorAvaliacao {
-    private final IRepositorioGenerico<Avaliacao> repositorioAvaliacoes;
+    private final IRepositorioAvaliacao repositorioAvaliacoes;
     private static ControladorAvaliacao instancia;
     ControladorRestaurante controladorRestaurante = ControladorRestaurante.getInstancia();
 
     // Controlador
     public ControladorAvaliacao() {
-        this.repositorioAvaliacoes = new RepositorioGenerico<>();
+        this.repositorioAvaliacoes = new RepositorioAvaliacao();
     }
 
     // Pega a instância do controlador

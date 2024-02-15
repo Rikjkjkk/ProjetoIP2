@@ -4,7 +4,9 @@ import br.ufrpe.projetoip2.beans.Lista;
 import br.ufrpe.projetoip2.beans.TipoDeConta;
 import br.ufrpe.projetoip2.beans.Usuario;
 import br.ufrpe.projetoip2.dados.IRepositorioGenerico;
+import br.ufrpe.projetoip2.dados.IRepositorioUsuario;
 import br.ufrpe.projetoip2.dados.RepositorioGenerico;
+import br.ufrpe.projetoip2.dados.RepositorioUsuario;
 import br.ufrpe.projetoip2.exception.ObjetoInvalidoException;
 import br.ufrpe.projetoip2.exception.ObjetoJaExisteException;
 import br.ufrpe.projetoip2.exception.ParametroInvalidoException;
@@ -15,12 +17,12 @@ import java.util.List;
 import java.util.Objects;
 
 public class ControladorUsuario {
-    private final IRepositorioGenerico<Usuario> repositorioUsuarios;
+    private final IRepositorioUsuario repositorioUsuarios;
     private static ControladorUsuario instancia;
 
     // Controlador
     public ControladorUsuario() {
-        this.repositorioUsuarios = new RepositorioGenerico<>();
+        this.repositorioUsuarios = new RepositorioUsuario();
     }
 
     // Pega a instância do controlador
