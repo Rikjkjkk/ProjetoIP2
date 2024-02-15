@@ -29,21 +29,20 @@ public class TelaCadastroController {
 
     // Limpa o label de erro
     public void initialize() {
-        // Configurar ouvintes de foco para cada campo
         txtNome.focusedProperty().addListener((observable, oldValue, newValue) -> {
-            if (newValue) { // Campo recebeu foco
+            if (newValue) {
                 lblErro.setText(""); // Limpar a mensagem de erro
             }
         });
 
         txtLogin.focusedProperty().addListener((observable, oldValue, newValue) -> {
-            if (newValue) { // Campo recebeu foco
+            if (newValue) {
                 lblErro.setText(""); // Limpar a mensagem de erro
             }
         });
 
         txtSenha.focusedProperty().addListener((observable, oldValue, newValue) -> {
-            if (newValue) { // Campo recebeu foco
+            if (newValue) {
                 lblErro.setText(""); // Limpar a mensagem de erro
             }
         });
@@ -71,7 +70,6 @@ public class TelaCadastroController {
         } catch (CamposNaoPreenchidosException e) {
             this.lblErro.setText("Erro: " + e.getMessage());
         } catch (IOException | ObjetoJaExisteException | ObjetoInvalidoException e) {
-            // Tratar outras exceções aqui, se necessário
         }
     }
 

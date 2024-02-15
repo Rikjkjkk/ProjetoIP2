@@ -63,14 +63,14 @@ public class ControladorCenas {
         stage.show();
     }
 
-    public void TrocarTelaListaFavoritos(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TelaListaFavoritos.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style/style.css")).toExternalForm());
-        stage.setScene(scene);
-        stage.show();
-    }
+//    public void TrocarTelaListaFavoritos(ActionEvent event) throws IOException {
+//        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TelaListaFavoritos.fxml")));
+//        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+//        scene = new Scene(root);
+//        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style/style.css")).toExternalForm());
+//        stage.setScene(scene);
+//        stage.show();
+//    }
 
     public void TrocarTelaListas(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TelaListas.fxml")));
@@ -81,14 +81,14 @@ public class ControladorCenas {
         stage.show();
     }
 
-    public void TrocarTelaListaAvaliacoes(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TelaListaAvaliacoes.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style/style.css")).toExternalForm());
-        stage.setScene(scene);
-        stage.show();
-    }
+//    public void TrocarTelaListaAvaliacoes(ActionEvent event) throws IOException {
+//        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TelaListaAvaliacoes.fxml")));
+//        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+//        scene = new Scene(root);
+//        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style/style.css")).toExternalForm());
+//        stage.setScene(scene);
+//        stage.show();
+//    }
 
     public void TrocarTelaPerfil(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TelaPerfil.fxml")));
@@ -99,14 +99,14 @@ public class ControladorCenas {
         stage.show();
     }
 
-    public void TrocarEscreverAvaliacao1(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TelaOpiniao.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style/style.css")).toExternalForm());
-        stage.setScene(scene);
-        stage.show();
-    }
+//    public void TrocarEscreverAvaliacao1(ActionEvent event) throws IOException {
+//        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TelaOpiniao.fxml")));
+//        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+//        scene = new Scene(root);
+//        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style/style.css")).toExternalForm());
+//        stage.setScene(scene);
+//        stage.show();
+//    }
 
     public void TrocarPesquisaUsuario(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TelaPesquisaUsuario.fxml")));

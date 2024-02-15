@@ -41,7 +41,7 @@ public class Fachada {
         controladorRestaurante.removerRestaurante(restaurante);
     }
 
-    // Métodos da fachada para usuários
+    // Métodos do ControladorUsuários
     public void adicionarUsuario(Usuario usuario) throws ObjetoJaExisteException, ObjetoInvalidoException {
         controladorUsuario.adicionarUsuario(usuario);
     }
