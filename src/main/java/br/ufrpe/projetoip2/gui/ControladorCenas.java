@@ -180,6 +180,15 @@ public class ControladorCenas {
         stage.show();
     }
 
+    public void TrocarOutrasAvaliacoes(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TelaOutrasAvaliacoes.fxml")));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("style/style.css")).toExternalForm());
+        stage.setScene(scene);
+        stage.show();
+    }
+
     public static ControladorCenas getInstance() {
         if (instance == null) {
             instance = new ControladorCenas();

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<SplitPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.TelaOpiniaoController">
+<SplitPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.projetoip2.gui.TelaOpiniaoController">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="425.0">
          <children>
