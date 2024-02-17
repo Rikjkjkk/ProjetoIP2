@@ -40,7 +40,7 @@ public class TelaOutrasAvaliacoesController {
     }
 
     // Voltar para Tela Principal
-    public void TrocarTelaPrincipal(ActionEvent event) throws IOException {
-        controladorCenas.TrocarTelaPrincipal(event);
+    public void TrocarPesquisaUsuario(ActionEvent event) throws IOException {
+        controladorCenas.TrocarPesquisaUsuario(event);
     }
 }

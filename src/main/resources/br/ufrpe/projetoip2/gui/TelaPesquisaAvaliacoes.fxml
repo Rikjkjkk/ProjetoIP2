@@ -13,8 +13,7 @@
       <TableView fx:id="listaAvaliacoesBuscadas" layoutX="25.0" layoutY="78.0" prefHeight="285.0" prefWidth="500.0">
         <columns>
           <TableColumn fx:id="nomeUsuario" prefWidth="137.0" text="Usuario" />
-          <TableColumn fx:id="nomeFilme" prefWidth="158.0" text="Filme" />
-            <TableColumn fx:id="dataFeita" prefWidth="110.0" text="Data" />
+          <TableColumn fx:id="nomeRestaurante" prefWidth="158.0" text="Restaurante" />
             <TableColumn fx:id="nota" prefWidth="94.0" text="Nota" />
         </columns>
       </TableView>

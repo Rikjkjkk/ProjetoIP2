@@ -43,7 +43,6 @@
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="379.0" prefWidth="425.0" VBox.vgrow="ALWAYS">
       <children>
             <Button fx:id="botaoVoltar" layoutX="36.0" layoutY="337.0" mnemonicParsing="false" onAction="#TrocarTelaPrincipal" text="Voltar" />
-            <Button fx:id="acessoLista" layoutX="38.0" layoutY="239.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="130.0" text="Listas" />
             <Button fx:id="acessoAvaliacao" layoutX="264.0" layoutY="239.0" mnemonicParsing="false" onAction="#TrocarOutrasAvaliacoes" prefHeight="56.0" prefWidth="130.0" text="Avaliações" />
             <Label layoutX="38.0" layoutY="38.0" text="Nome:">
                <font>

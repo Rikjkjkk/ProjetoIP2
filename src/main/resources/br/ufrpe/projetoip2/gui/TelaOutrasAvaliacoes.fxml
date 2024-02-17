@@ -14,6 +14,6 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="btnVoltar" layoutX="186.0" layoutY="386.0" mnemonicParsing="false" onAction="#TrocarTelaPrincipal" text="Voltar" />
+      <Button fx:id="btnVoltar" layoutX="186.0" layoutY="386.0" mnemonicParsing="false" onAction="#TrocarPesquisaUsuario" text="Voltar" />
    </children>
 </AnchorPane>
